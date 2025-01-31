@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <p id="countdown"></p>
+    <link rel="stylesheet" href="booking-styling.css">
+    
+</head>
+
+
+
+<body>
+
+
+    <div class="booking-form">
+
+        <h1>Fill Order Form</h1>
+        
+        <form name="BookingForm" action="" method="post">
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="LastName" name="LastName" placeholder="Enter your last name/surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="Gender" name="Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female" selected>Female</option>
+                </select>  
+            </div>
+
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="Contact" name="Contact" placeholder="081 123 4567" pattern="\d{3} \d{3} \d{4}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter your email address" required readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingDate">Collection Date</label>
+                <input type="date" id="SessionDate" name="SessionDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="timeSlot">Preferred Collection Time</label>
+                <select id="TimeSlot" name="TimeSlot" required>
+                    <option value="">Select Time Slot</option>
+                    <option value="08:00">08:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="15:00">15:00</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="Notes" name="Notes" placeholder="Enter any special requests or notes"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Place Order</button>
+            </div>
+
+            <!-- <div class="form-group"> <button onclick="logout()">Logout</button></div>-->
+
+            <div>
+                <a href="index.html">GO BACK</a>
+            </div>
+
+        </form>
+    </div>
+    <script src="Date-Script.js"></script>
+    <script src="SessionBook.js"></script>
+    <script src="LogOutBook.jss"></script>
+    <script src="auto-logout.jss"></script>
+    <!--   <script src="improved.js"></script>-->
+
+
+</body>
+</html>

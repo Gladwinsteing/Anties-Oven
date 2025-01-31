@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="user-details.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Information</h1>
+        <form id="profileForm" ><!--action="../HTML LogIn/index.html" method="post"-->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" >
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" >
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" >
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" >
+
+            <label for="altcontact">Alternative Contact</label>
+            <input type="tel" id="altcontact" name="altcontact">
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address here..."></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+            <a href="../../HTML Design/index.html">Return Home</a>
+        </form>
+        
+    </div>
+    <script src="Fetch.js"></script>
+</body>
+</html>

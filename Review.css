@@ -1,0 +1,185 @@
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 15px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .survey-container h3 {
+            text-align: center;
+        }
+
+        .survey-section p {
+            text-align: center;
+        }
+        
+        /* Header styling */
+        .top header {
+            background-color: #9c3030;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .top h1{
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Main container styling */
+        .survey-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .survey-section {
+            display: none;
+        }
+
+        
+
+        .active {
+            display: block;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-right: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Buttons styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .previous-btn {
+            background-color: #888;
+        }
+
+        .previous-btn:hover {
+            background-color: #777;
+        }
+
+        .submit-btn {
+            display: none; /* Hidden until the last section */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #9c3030;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+            width: 98%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .survey-container {
+                padding: 15px;
+            }
+
+            button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .survey-container {
+                padding: 10px;
+                width: 100%;
+            }
+
+            button {
+                font-size: 1em;
+                padding: 10px 15px;
+            }
+
+            footer p {
+                font-size: 0.9em;
+            }
+
+        }

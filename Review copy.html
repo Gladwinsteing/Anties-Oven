@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review Survey</title>
+    <link rel="stylesheet" href="Review.csss" >
+    <style>
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Restaurant Review Survey</h1>
+        <p>We value your feedback! Please answer the following questions to help us improve our services.</p>
+    </header>
+
+    <!-- Survey Form -->
+    <div class="survey-container">
+        <!-- Section 1: Waiter/Waitress Review -->
+        <div class="survey-section active" id="section1">
+            <h2>Section 1: Waiter/Waitress Review</h2>
+            <label>
+                <input type="radio" name="waiter" value="yes"> Yes
+            </label>
+            <label>
+                <input type="radio" name="waiter" value="no"> No
+            </label>
+        </div>
+
+        <!-- Section 2: Food Review -->
+        <div class="survey-section" id="section2">
+            <h2>Section 2: Food Review</h2>
+            <label>
+                <input type="radio" name="food" value="yes"> Yes
+            </label>
+            <label>
+                <input type="radio" name="food" value="no"> No
+            </label>
+        </div>
+
+        <!-- Section 3: Hygiene Review -->
+        <div class="survey-section" id="section3">
+            <h2>Section 3: Hygiene Review</h2>
+            <label>
+                <input type="radio" name="hygiene" value="yes"> Yes
+            </label>
+            <label>
+                <input type="radio" name="hygiene" value="no"> No
+            </label>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button class="previous-btn" id="previousBtn" style="display:none;">Previous</button>
+            <button class="next-btn" id="nextBtn">Next</button>
+            <button class="submit-btn" id="submitBtn" style="display:none;">Submit</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Auntie Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <script></script>
+
+</body>
+</html>

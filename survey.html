@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stay Safe Online - Survey</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="Survey.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Stay Safe Online</h1>
+        <p>Help us understand how aware you are about staying safe on the internet.</p>
+    </header>
+
+    <main>
+        <div class="survey-container">
+            
+            <h2>Online Safety Awareness Survey</h2>
+
+            <form id="survey-form">
+                <div class="question">
+                    <label for="phishing">Have you ever heard of phishing attacks?</label>
+                    <div class="options">
+                        <input type="radio" id="phishing-yes" name="phishing" value="yes">
+                        <label for="phishing-yes">Yes</label>
+                        <input type="radio" id="phishing-no" name="phishing" value="no">
+                        <label for="phishing-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="ransomware">Do you know what ransomware is and how it works?</label>
+                    <div class="options">
+                        <input type="radio" id="ransomware-yes" name="ransomware" value="yes">
+                        <label for="ransomware-yes">Yes</label>
+                        <input type="radio" id="ransomware-no" name="ransomware" value="no">
+                        <label for="ransomware-no">No</label>
+                        <input type="radio" id="ransomware-uncertain" name="ransomware" value="uncertain">
+                        <label for="ransomware-uncertain">Not Sure</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="virus">Do you have antivirus software installed on your devices?</label>
+                    <div class="options">
+                        <input type="radio" id="virus-yes" name="virus" value="yes">
+                        <label for="virus-yes">Yes</label>
+                        <input type="radio" id="virus-no" name="virus" value="no">
+                        <label for="virus-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="leave-unattended">Do you leave your computer or smartphone unattended without locking it?</label>
+                    <div class="options">
+                        <input type="radio" id="leave-unattended-yes" name="leave-unattended" value="yes">
+                        <label for="leave-unattended-yes">Yes</label>
+                        <input type="radio" id="leave-unattended-no" name="leave-unattended" value="no">
+                        <label for="leave-unattended-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="open-wifi">Do you connect to public, open Wi-Fi networks without any precautions?</label>
+                    <div class="options">
+                        <input type="radio" id="open-wifi-yes" name="open-wifi" value="yes">
+                        <label for="open-wifi-yes">Yes</label>
+                        <input type="radio" id="open-wifi-no" name="open-wifi" value="no">
+                        <label for="open-wifi-no">No</label>
+                        <input type="radio" id="open-wifi-uncertain" name="open-wifi" value="uncertain">
+                        <label for="open-wifi-uncertain">Not Sure</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="cyberbullying">Have you ever experienced cyberbullying online?</label>
+                    <div class="options">
+                        <input type="radio" id="cyberbullying-yes" name="cyberbullying" value="yes">
+                        <label for="cyberbullying-yes">Yes</label>
+                        <input type="radio" id="cyberbullying-no" name="cyberbullying" value="no">
+                        <label for="cyberbullying-no">No</label>
+                        <input type="radio" id="cyberbullying-uncertain" name="cyberbullying" value="uncertain">
+                        <label for="cyberbullying-uncertain">Not Sure</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="child-pornography">Do you know the risks of online child pornography and how to report it?</label>
+                    <div class="options">
+                        <input type="radio" id="child-pornography-yes" name="child-pornography" value="yes">
+                        <label for="child-pornography-yes">Yes</label>
+                        <input type="radio" id="child-pornography-no" name="child-pornography" value="no">
+                        <label for="child-pornography-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="scams">Are you aware of common online scams, such as fake job offers or lottery winnings?</label>
+                    <div class="options">
+                        <input type="radio" id="scams-yes" name="scams" value="yes">
+                        <label for="scams-yes">Yes</label>
+                        <input type="radio" id="scams-no" name="scams" value="no">
+                        <label for="scams-no">No</label>
+                        <input type="radio" id="scams-uncertain" name="scams" value="uncertain">
+                        <label for="scams-uncertain">Not Sure</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="password-security">Do you use strong and unique passwords for all your online accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="password-yes" name="password-security" value="yes">
+                        <label for="password-yes">Yes</label>
+                        <input type="radio" id="password-no" name="password-security" value="no">
+                        <label for="password-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="software-updates">Do you regularly update your software and applications on your devices?</label>
+                    <div class="options">
+                        <input type="radio" id="software-yes" name="software-updates" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="software-no" name="software-updates" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+<!--Addition-->
+                <h2>Password Security Survey</h2>
+                        <div class="question">
+                    <label for="Password1">•	Do you use strong, unique passwords for each of your accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="Password1-yes" name="Password1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Password1-no" name="Password1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+
+                <div class="question">
+                    <label for="Password2">•	How often do you update your passwords</label>
+                    <div class="options">
+                        <input type="radio" id="Password2-yes" name="Password2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Password2-no" name="Password2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Password3">•	Do you use a password manager to store your passwords?</label>
+                    <div class="options">
+                        <input type="radio" id="Password3-yes" name="Password3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="software-no" name="Password3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Password4">•	Do you use two-factor authentication (2FA) for your important accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="Password4-yes" name="Password4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Password4-no" name="Password4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Phishing Awareness Survey</h2>
+
+                <div class="question">
+                    <label for="Phishing1">•	How easily can you recognize a phishing email?</label>
+                    <div class="options">
+                        <input type="radio" id="Phishing1-yes" name="Phishing1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Phishing1-no" name="Phishing1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Phishing2">•	Do you verify the sender’s email address before clicking on links in emails?</label>
+                    <div class="options">
+                        <input type="radio" id="sPhishing2-yes" name="Phishing2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Phishing2-no" name="Phishing2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Phishing3">•	How often do you check the URL before entering sensitive information on websites?</label>
+                    <div class="options">
+                        <input type="radio" id="Phishing3-yes" name="Phishing3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Phishing3-no" name="Phishing3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Phishing4">•	Have you ever fallen victim to a phishing scam?</label>
+                    <div class="options">
+                        <input type="radio" id="Phishing4-yes" name="Phishing4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Phishing4-no" name="Phishing4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Social Media Security Survey</h2>
+
+                <div class="question">
+                    <label for="SocialMedia1">•	Do you regularly review your privacy settings on social media accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="SocialMedia1-yes" name="SocialMedia1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="SocialMedia1-no" name="SocialMedia1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="SocialMedia2">•	Do you share personal information (address, phone number, etc.) on social media?</label>
+                    <div class="options">
+                        <input type="radio" id="SocialMedia2-yes" name="SocialMedia2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="SocialMedia2-no" name="SocialMedia2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="SocialMedia3">•	Have you ever experienced hacking or unauthorized access to your social media accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="SocialMedia3-yes" name="SocialMedia3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="SocialMedia3-no" name="SocialMedia3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="SocialMedia4">•	Do you use two-factor authentication (2FA) for social media accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="SocialMedia4-yes" name="SocialMedia4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="SocialMedia4-no" name="SocialMedia4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Mobile Security Survey</h2>
+
+                <div class="question">
+                    <label for="MobileSecurity1">•	Do you use a screen lock (PIN, fingerprint, etc.) on your mobile devices?</label>
+                    <div class="options">
+                        <input type="radio" id="MobileSecurity1-yes" name="MobileSecurity1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="MobileSecurity1-no" name="MobileSecurity1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="MobileSecurity2">•	Do you update your mobile devices regularly with the latest security patches?</label>
+                    <div class="options">
+                        <input type="radio" id="MobileSecurity2-yes" name="MobileSecurity2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="MobileSecurity2-no" name="MobileSecurity2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="MobileSecurity3">•	Do you download apps only from official stores (Google Play, Apple App Store)?</label>
+                    <div class="options">
+                        <input type="radio" id="MobileSecurity3-yes" name="MobileSecurity3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="MobileSecurity3-no" name="MobileSecurity3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="MobileSecurity4">•	Do you use a VPN on your mobile device?</label>
+                    <div class="options">
+                        <input type="radio" id="MobileSecurity4-yes" name="MobileSecurity4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="MobileSecurity4-no" name="MobileSecurity4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Two-Factor Authentication (2FA) Survey</h2>
+
+                <div class="question">
+                    <label for="2FA1">•	Do you use two-factor authentication (2FA) on your online accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="2FA1-yes" name="2FA1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="2FA1-no" name="2FA1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="2FA2">•	Which 2FA methods do you use (SMS, authenticator app, hardware key)?</label>
+                    <div class="options">
+                        <input type="radio" id="2FA2-yes" name="2FA2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="2FA2-no" name="2FA2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="2FA3">•	Have you ever been locked out of an account due to 2FA issues?</label>
+                    <div class="options">
+                        <input type="radio" id="2FA3-yes" name="2FA3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="2FA3-no" name="2FA3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="2FA4">•	Do you consider two-factor authentication an essential security measure?</label>
+                    <div class="options">
+                        <input type="radio" id="2FA4-yes" name="2FA4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="2FA4-no" name="2FA4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Data Privacy Awareness Survey</h2>
+                <div class="question">
+                    <label for="Data1">•	Do you regularly review the privacy policies of websites you use?</label>
+                    <div class="options">
+                        <input type="radio" id="Data1-yes" name="Data1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Data1-no" name="Data1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Data2">•	Are you aware of how your personal data is shared with third parties?</label>
+                    <div class="options">
+                        <input type="radio" id="Data2-yes" name="Data2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Data2-no" name="Data2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Data3">•	Do you use ad-blocking software or privacy-focused browsers?</label>
+                    <div class="options">
+                        <input type="radio" id="Data3" name="Data3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Data3-no" name="Data3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Data4">•	Do you avoid sharing personal information on websites that seem untrustworthy?</label>
+                    <div class="options">
+                        <input type="radio" id="Data4-yes" name="Data4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Data4-no" name="Data4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Cybersecurity Knowledge Survey</h2>
+                <div class="question">
+                    <label for="Cybersecurity1">•	Do you know the difference between malware, ransomware, and viruses?</label>
+                    <div class="options">
+                        <input type="radio" id="Cybersecurity1-yes" name="Cybersecurity1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cybersecurity1-no" name="Cybersecurity1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Cybersecurity2">•	How familiar are you with cybersecurity best practices?</label>
+                    <div class="options">
+                        <input type="radio" id="Cybersecurity2-yes" name="Cybersecurity2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cybersecurity2-no" name="Cybersecurity2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Cybersecurity3">•	Do you know how to spot a website that might be insecure (e.g., no HTTPS)?</label>
+                    <div class="options">
+                        <input type="radio" id="Cybersecurity3-yes" name="Cybersecurity3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cybersecurity3-no" name="Cybersecurity3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="software-updates">•	Have you ever taken a cybersecurity course or training?</label>
+                    <div class="options">
+                        <input type="radio" id="Cybersecurity4-yes" name="Cybersecurity4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cybersecurity4-no" name="Cybersecurity4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Wi-Fi and Network Security Survey</h2>
+                <div class="question">
+                    <label for="Wi-Fi1">•	Do you use a strong password for your home Wi-Fi network?</label>
+                    <div class="options">
+                        <input type="radio" id="Wi-Fi-yes" name="Wi-Fi1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Wi-Fi-no" name="Wi-Fi1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Wi-Fi2">•	Do you have a guest network set up for visitors to your Wi-Fi?</label>
+                    <div class="options">
+                        <input type="radio" id="Wi-Fi-yes2" name="Wi-Fi2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Wi-Fi-no2" name="Wi-Fi2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Wi-Fi3">•	Have you ever used public Wi-Fi to perform sensitive activities like banking?</label>
+                    <div class="options">
+                        <input type="radio" id="Wi-Fi-yes3" name="Wi-Fi3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Wi-Fi-no3" name="Wi-Fi3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="software-updates">•	Do you use a VPN to protect your data when using public Wi-Fi?</label>
+                    <div class="options">
+                        <input type="radio" id="Wi-Fi-yes4" name="Wi-Fi4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Wi-Fi-no4" name="Wi-Fi4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Online Banking Security Survey</h2>
+
+                <div class="question">
+                    <label for="Banking1">•	Do you enable two-factor authentication (2FA) for your online banking accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="Banking1-yes" name="Banking1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Banking1-no" name="Banking1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Banking2">•	How often do you check your bank statements for suspicious activity?</label>
+                    <div class="options">
+                        <input type="radio" id="Banking2-yes" name="Banking2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Banking2-no" name="Banking2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Banking3">•	Do you access your bank accounts only from secure, trusted devices?</label>
+                    <div class="options">
+                        <input type="radio" id="Banking3-yes" name="Banking3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Banking3-no" name="Banking3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Banking4">•	Have you ever been a victim of online banking fraud?</label>
+                    <div class="options">
+                        <input type="radio" id="Banking4-yes" name="Banking4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Banking4-no" name="Banking4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Online Shopping Security Survey</h2>
+                <div class="question">
+                    <label for="Shopping1">•	Do you use credit cards instead of debit cards for online shopping?</label>
+                    <div class="options">
+                        <input type="radio" id="Shopping1-yes" name="Shopping1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Shopping1-no" name="Shopping1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Shopping2">•	Do you always check the website’s security (look for HTTPS) before making a purchase?</label>
+                    <div class="options">
+                        <input type="radio" id="Shopping2-yes" name="Shopping2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Shopping2-no" name="Shopping2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Shopping3">•	Are you cautious about the websites where you shop online?</label>
+                    <div class="options">
+                        <input type="radio" id="Shopping3-yes" name="Shopping3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Shopping3-no" name="Shopping3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Shopping4">•	Do you have alerts set up for your credit card transactions?</label>
+                    <div class="options">
+                        <input type="radio" id="Shopping4-yes" name="Shopping4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Shopping4-no" name="Shopping4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Email Security Survey</h2>
+                <div class="question">
+                    <label for="Email1">•	Do you use spam filters to block unwanted emails?</label>
+                    <div class="options">
+                        <input type="radio" id="Email1-yes" name="Email1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Email1-no" name="Email1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Email2">•	Do you regularly change your email account passwords?</label>
+                    <div class="options">
+                        <input type="radio" id="Email2-yes" name="Email2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Email2-no" name="Email2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Email3">•	Are you cautious about clicking links or downloading attachments from unknown senders?</label>
+                    <div class="options">
+                        <input type="radio" id="Email3-yes" name="Email3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Email3-no" name="Email3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Email4">•	Do you use an encrypted email service?</label>
+                    <div class="options">
+                        <input type="radio" id="Email4" name="Email4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Email4" name="Email4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Device Security Survey</h2>
+                <div class="question">
+                    <label for="Device1">•	Do you regularly update the software and security features on your devices?</label>
+                    <div class="options">
+                        <input type="radio" id="Device1-yes" name="Device1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Device1-no" name="Device1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Device2">•	Do you use antivirus software on your devices?</label>
+                    <div class="options">
+                        <input type="radio" id="Device2-yes" name="Device2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Device2-no" name="Device2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Device3">•	Do you back up your data regularly?</label>
+                    <div class="options">
+                        <input type="radio" id="Device3-yes" name="Device3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Device3-no" name="Device3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Device4">•	Are your devices protected with strong passwords or biometric authentication?</label>
+                    <div class="options">
+                        <input type="radio" id="Device4-yes" name="Device4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Device4-no" name="Device4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Identity Theft Awareness Survey</h2>
+                <div class="question">
+                    <label for="Identity1">•	Do you know what to do if your identity is stolen online?</label>
+                    <div class="options">
+                        <input type="radio" id="Identity1-yes" name="Identity1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Identity1-no" name="Identity1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Identity2">•	Are you aware of the signs of identity theft?</label>
+                    <div class="options">
+                        <input type="radio" id="Identity2-yes" name="Identity2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Identity2-no" name="Identity2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Identity3">•	Have you ever been a victim of identity theft?</label>
+                    <div class="options">
+                        <input type="radio" id="Identity3-yes" name="Identity3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Identity3-no" name="Identity3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Identity4">•	Do you use identity theft protection services?</label>
+                    <div class="options">
+                        <input type="radio" id="Identity4-yes" name="Identity4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Identity4-no" name="Identity4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Remote Work Security Survey</h2>
+                <div class="question">
+                    <label for="Remote1">•	Do you use a VPN when working remotely?</label>
+                    <div class="options">
+                        <input type="radio" id="Remote1-yes" name="Remote1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Remote1-no" name="Remote1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Remote2">•	Do you share sensitive company information through secure channels (e.g., encrypted emails)?</label>
+                    <div class="options">
+                        <input type="radio" id="Remote2-yes" name="Remote2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Remote2" name="Remote2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Remote3">•	Have you ever used an insecure public network for work purposes?</label>
+                    <div class="options">
+                        <input type="radio" id="Remote3-yes" name="Remote3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Remote3-no" name="Remote3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Remote4">•	Do you regularly back up your work-related files?</label>
+                    <div class="options">
+                        <input type="radio" id="Remote4-yes" name="Remote4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Remote4-no" name="Remote4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Data Breach Awareness Survey</h2>
+                <div class="question">
+                    <label for="DataBreach1">•	Are you aware if any of your accounts have been involved in a data breach?</label>
+                    <div class="options">
+                        <input type="radio" id="DataBreach1-yes" name="DataBreach1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="DataBreach1-no" name="DataBreach1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="DataBreach2">•	Do you change passwords immediately if you learn about a data breach involving your information?</label>
+                    <div class="options">
+                        <input type="radio" id="DataBreach2-yes" name="DataBreach2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="DataBreach2-no" name="DataBreach2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="DataBreach3">•	Do you monitor your credit report for signs of identity theft?</label>
+                    <div class="options">
+                        <input type="radio" id="DataBreach3-yes" name="DataBreach3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="DataBreach3-no" name="DataBreach3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="DataBreach4">•	Do you use a service to alert you when your information is exposed in a data breach?</label>
+                    <div class="options">
+                        <input type="radio" id="DataBreach4-yes" name="DataBreach4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="software-no" name="DataBreach4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Online Gaming Security Survey</h2>
+                <div class="question">
+                    <label for="Gaming1">•	Do you use a strong password for your online gaming accounts?</label>
+                    <div class="options">
+                        <input type="radio" id="Gaming1-yes" name="Gaming1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Gaming1-no" name="Gaming1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Gaming2">•	Do you enable two-factor authentication (2FA) for gaming platforms?</label>
+                    <div class="options">
+                        <input type="radio" id="Gaming2-yes" name="Gaming2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Gaming2-no" name="Gaming2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Gaming3">•	Are you cautious about sharing personal information in online gaming chats?</label>
+                    <div class="options">
+                        <input type="radio" id="Gaming3-yes" name="Gaming3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Gaming3-no" name="Gaming3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Gaming4">•	Have you ever experienced an account hack in a gaming platform?</label>
+                    <div class="options">
+                        <input type="radio" id="Gaming4-yes" name="Gaming4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Gaming4-no" name="Gaming4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Internet of Things (IoT) Security Survey</h2>
+                <div class="question">
+                    <label for="IoT1">•	Do you change the default passwords on your smart devices (e.g., thermostat, security cameras)?</label>
+                    <div class="options">
+                        <input type="radio" id="IoT1-yes" name="IoT1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="IoT1-no" name="IoT1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="IoT2">•	Are your IoT devices connected to a separate network from your main devices?</label>
+                    <div class="options">
+                        <input type="radio" id="IoT2-yes" name="IoT2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="IoT2-no" name="IoT2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="IoT3">•	Do you update the firmware/software of your IoT devices regularly?</label>
+                    <div class="options">
+                        <input type="radio" id="IoT3-yes" name="IoT3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="IoT3-no" name="IoT3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="IoT4">•	Have you experienced any security issues with your smart home devices?</label>
+                    <div class="options">
+                        <input type="radio" id="IoT4-yes" name="IoT4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="IoT4-no" name="IoT4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Encryption and Secure Communication Survey</h2>
+                <div class="question">
+                    <label for="Communication1">•	Do you use encrypted messaging apps (e.g., Signal, WhatsApp)?</label>
+                    <div class="options">
+                        <input type="radio" id="Communication1-yes" name="Communication1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Communication1-no" name="Communication1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Communication2">•	Are you aware of end-to-end encryption in messaging services?</label>
+                    <div class="options">
+                        <input type="radio" id="Communication2-yes" name="Communication2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Communication2-no" name="Communication2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Communication3">•	Do you send sensitive information over unsecured channels (e.g., regular email)?</label>
+                    <div class="options">
+                        <input type="radio" id="Communication3-yes" name="Communication3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="software-no" name="Communication3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="software-updates">•	Do you use encryption for storing sensitive files on your devices?</label>
+                    <div class="options">
+                        <input type="radio" id="Communication4-yes" name="Communication4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Communication4-no" name="Communication4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Child Safety Online Survey</h2>
+                <div class="question">
+                    <label for="Child1">•	Do you monitor your child’s online activities and internet usage?</label>
+                    <div class="options">
+                        <input type="radio" id="Child1-yes" name="Child1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Child1-no" name="Child1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Child2">•	Are you aware of the potential risks your child may face online (e.g., cyberbullying, online predators)?</label>
+                    <div class="options">
+                        <input type="radio" id="Child2-yes" name="Child2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Child2-no" name="Child2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Child3">•	Do you use parental controls on your child’s devices?</label>
+                    <div class="options">
+                        <input type="radio" id="Child3-yes" name="Child3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Child3-no" name="Child3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Child4">•	Do you educate your child about online safety?</label>
+                    <div class="options">
+                        <input type="radio" id="Child4-yes" name="Child4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Child4-no" name="Child4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <h2>Cyberbullying Awareness Survey</h2>
+                <div class="question">
+                    <label for="Cyberbullying1">•	Are you aware of the signs of cyberbullying?</label>
+                    <div class="options">
+                        <input type="radio" id="Cyberbullying1-yes" name="Cyberbullying1" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cyberbullying1-no" name="Cyberbullying1" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Cyberbullying2">•	Do you know how to report instances of cyberbullying online?</label>
+                    <div class="options">
+                        <input type="radio" id="Cyberbullying2-yes" name="Cyberbullying2" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cyberbullying2-no" name="Cyberbullying2" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Cyberbullying3">•	Have you ever experienced or witnessed cyberbullying?</label>
+                    <div class="options">
+                        <input type="radio" id="Cyberbullying3-yes" name="Cyberbullying3" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cyberbullying3-no" name="Cyberbullying3" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label for="Cyberbullying4">•	Do you know the resources available for victims of cyberbullying?</label>
+                    <div class="options">
+                        <input type="radio" id="Cyberbullying4-yes" name="Cyberbullying4" value="yes">
+                        <label for="software-yes">Yes</label>
+                        <input type="radio" id="Cyberbullying4-no" name="Cyberbullying4" value="no">
+                        <label for="software-no">No</label>
+                    </div>
+                </div>
+
+                <!--End-->
+
+
+
+
+
+                <div class="question">
+                    <button type="button" onclick="calculateRating()">Submit Survey</button>
+                </div>
+            </form>
+
+            <div id="result" class="result"></div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stay Safe Online</p>
+    </footer>
+
+<script src="Survey.js"></script>
+
+</body>
+</html>
