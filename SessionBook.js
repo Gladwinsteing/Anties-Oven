@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const username = localStorage.getItem('username');
     if (!username) {
         alert('You must log in to access this page.');
-        window.location.href = "./HTML LogIn/login - Copy.html"; // Redirect to login page
+        window.location.href = "./HTML-LogIn/login-Copy.html"; // Redirect to login page
     } else {
         console.log(`Welcome, ${username}`); // Optional: log the username
     }
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const username = localStorage.getItem('username');
     if (!username) {
         alert('You must log in to access this page.');
-        window.location.href = "./HTML Login/login - Copy.html"; // Redirect to login page
+        window.location.href = "./HTML-Login/login-Copy.html"; // Redirect to login page
     } else {
         // Automatically populate the FirstName field with the logged-in username
         const firstNameInput = document.getElementById('Email');

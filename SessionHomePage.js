@@ -3,7 +3,7 @@ window.onload = function() {
     
     if (!username) {
         // If no user session exists, redirect to login page
-        window.location.href = './HTML LogIn/login - Copy.html';
+        window.location.href = './HTML-LogIn/login-Copy.html';
     } else {
         // Welcome the logged-in user
         document.getElementById('welcomeMessage').innerText = `Welcome, ${username}!`;
