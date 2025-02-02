@@ -18,7 +18,7 @@ header h1 {
 .hero {
     text-align: center;
     padding: 40px 20px;
-    background-image: url('./Website-Images/Chocolate-Chip-Muffins-2522-scaledd.jpg'); /* Replace with your salon image https://via.placeholder.com/1920x1080*/
+    background-image: url('./Website-Images/Chocolate-Chip-Muffins-2522-scaled.jpg'); /* Replace with your salon image https://via.placeholder.com/1920x1080*/
     background-size: cover;
     background-position: center;
     color: white;
